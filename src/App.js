@@ -4,7 +4,7 @@ import { ethers } from 'ethers';
 import { WalletConnectConnector } from '@web3-react/walletconnect-connector';
 import Mint from './Mint';
 import { Web3ReactModal } from '@bitiumagency/web3-react-modal';
-
+import logo from './logo.svg'
 function getLibrary(provider) {
   return new ethers.providers.Web3Provider(provider)
 }
@@ -13,6 +13,9 @@ function App() {
   return (
     <Web3ReactProvider
       getLibrary={getLibrary}>
+      <a href="https://bitium.agency" target="blank">
+        <img src={logo} alt="Bitium" className="logo" />
+      </a>
       <Mint />
       <Web3ReactModal
         useWeb3React={

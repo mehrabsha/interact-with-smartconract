@@ -8,11 +8,10 @@
   border-radius: 16px;
   overflow: hidden;
   padding: 16px;
-  margin-top: 20vh;
 }
 
 button { 
-  background-color: #3E14B6;
+  background-color: #2F4040;
   padding: 12px;
   border: none;
   color: white;
@@ -32,3 +31,9 @@ input {
   outline: none;
   border-radius: 8px;
 } 
+
+.logo{
+  max-width: 400px; 
+  margin: 64px auto;
+  display: block;
+}
